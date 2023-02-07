@@ -1,5 +1,6 @@
 git.txt
 
+
 git : 분산 버전관리 시스템
 
 test.txt -> test최종.txt -> test최최종.txt
@@ -20,10 +21,37 @@ test.txt -> test최종.txt -> test최최종.txt
 > git init(저장소 설정)
 > git status(git 상태 확인)
 
-> git add [untracked상태의 파일명]
+> 본인정보 사용 실행
+ >git config --global user.email "a01055384863@gamil.com"
+ >git config --global user.name "Taejun33312"
+
+> git add [untracked상태의 파일명] [파일 많을때 .]
 
 > git add git.txt
 
 > git commit -m "첫번째 커밋"
 
 > git log
+
+> git log --oneline
+
+> git add itwill.txt
+
+> git checkout [커밋아이디] - 수정하기 전 파일로 돌아감
+
+> git checkout Ob51346
+
+> git checkout Ob51346 itwill.txt
+
+repository
+내컴퓨터 : localrepository
+깃허브 : 원격repository
+
+> git remote add origin [깃허브 원격 저장소 주소] - localrepository,원격repository 연결
+
+> git push origin master - 원격 저장소로 파일 전송
+
+
+
+
+
